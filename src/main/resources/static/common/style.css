@@ -1,0 +1,242 @@
+.carousel-indicators .active {
+    border-color: #5bc0de !important;
+    background-color: #5bc0de !important;
+}
+
+.carousel-indicators li[class='slide-dot'] {
+    border: 1px solid #5bc0de;
+}
+
+.item img {
+    margin: 0 auto
+}
+
+.session-container {
+    max-width: 1170px;
+    padding: 20px 15px 10px 15px;
+    margin: 0 auto;
+}
+
+.session-title {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.session-content {
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: left !important;
+}
+
+.session-title h2 {
+    font-size: 33px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #242424;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.separator {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: url(../common/img/separator-one.png) center center no-repeat;
+}
+
+.background-gray {
+    background-color: #f2f2f2 !important;
+}
+
+.background-black {
+    background-color: #555555 !important;
+}
+
+.background-blue {
+    background-color: #498bb4 !important;
+}
+
+.stander-size {
+    width: 156px;
+    height: 156px;
+}
+
+.des-text {
+    position: relative;
+    line-height: 1.8em;
+    padding-top: 10px;
+    color: #4f4f4f;
+    font-size: 15px;
+    text-align: start;
+}
+
+.about-block {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.about-block .inner-box .icon-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 34px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    font-weight: normal;
+    margin: 0;
+    background: none;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.introduce {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.about-block .inner-box .text {
+    font-size: 13px;
+    color: #4f4f4f;
+    margin-top: 25px;
+    line-height: 1.9em;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+}
+
+a {
+    font-size: 17px;
+    color: #4f4f4f;
+    display: inline-block;
+}
+
+.img-full {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.white {
+    color: #fff;
+}
+
+.msg {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: -4px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+
+}
+
+.separator-vertical {
+    width: 2px;
+    height: 100%;
+    background: gainsboro;
+}
+
+.forget-password {
+    float: right;
+    font-size: small;
+}
+
+.checkbox {
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+}
+
+.label-icon {
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.more-padding {
+    padding-left: 40px !important;
+}
+
+.slider-btn {
+    font-size: 30px !important;
+}
+
+.sidebar-nav > li > a {
+    color: white !important;
+}
+
+.smaller-margin {
+    margin-bottom: 20px !important;
+}
+
+.margin-zero {
+    margin: 0 auto !important;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+
+}
+
+.icon-box {
+    left: 30px !important;
+    top: 30px !important;
+    background: transparent !important;
+}
+
+.session-title {
+    margin-bottom: 70px !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.center-text {
+    text-align: center !important;
+}
+
+.t-table {
+    border: 0 solid transparent !important;
+}
+
+.t-table tr{
+    border: 0 solid transparent !important;
+}
+
+.t-table td{
+    border: 0 solid transparent !important;
+}
+
+.fixedFontSize {
+    font-size: 95% !important;
+    line-height: 35px !important;
+    background: transparent;
+    color: black;
+}
+

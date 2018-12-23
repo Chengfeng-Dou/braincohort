@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>精神疾病队列研究平台</title>
+    <link rel="stylesheet" th:href="@{common/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{common/style.css}">
+    <link rel="stylesheet" th:href="@{edc/edc.css}">
+    <script th:src="@{common/jquery.min.js}"></script>
+    <script th:src="@{common/bootstrap/js/bootstrap.js}"></script>
+</head>
+<body>
+<!-- 标题栏 {首页，项目列表，EDC}-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a th:href="@{/}"><img th:src="@{common/img/logo.png}" width="300"></a>
+        </div>
+        <div id="navbar" class="navbar-right navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/}">首页</a></li>
+                <li><a th:href="@{/projectList(pageNumber=0)}">项目列表</a></li>
+                <li><a th:href="@{/edc}">EDC</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div style="height: 120px"></div>
+
+<section class="session-container">
+    <div class="container" style="padding-bottom: 60px">
+        <div class="row">
+            <div class="col-md-offset-3 col-sm-offset-3 col-xs-6 col-md-6">
+                <div class="card">
+                    <div class="row col-md-10 col-xs-10 col-md-offset-1">
+                        <h2>登陆到EDC平台</h2>
+                        <div class="form-container">
+                            <form>
+                                <div class="form-group">
+                                    <label class="glyphicon glyphicon-user label-icon" for="username"></label>
+                                    <input id="username" class="form-control more-padding" placeholder="用户名">
+                                </div><!--//form-group-->
+                                <div class="form-group">
+                                    <label class="glyphicon glyphicon-lock label-icon" for="password"></label>
+                                    <input id="password" type="password" class="form-control more-padding" placeholder="密码">
+                                </div><!--//form-group-->
+                                <div class="checkbox">
+                                    <label class="col-xs-12 col-md-6">
+                                        <input type="checkbox"> 记住用户名和密码
+                                    </label>
+                                    <label class="col-xs-12 col-md-6">
+                                        <a class="forget-password" href="#">忘记密码</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">登陆</button>
+
+                            </form>
+                        </div>
+                    </div><!--//row-->
+                    <div class="clearfix"></div>
+                </div><!--//form-box-inner-->
+            </div><!--//form-box-->
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//contact-section-->
+
+<div class="session-container background-black clearfix white">
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{common/img/email.png}">
+        <p class="msg">liuyuankeban@163.com</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{common/img/mobile.png}">
+        <p class="msg">010-82805307</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{common/img/location.png}">
+        <p class="msg">北京大学第六医院</p>
+    </div>
+
+</div>
+
+</body>
+</html>

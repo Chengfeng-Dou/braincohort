@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>精神疾病队列研究平台</title>
+    <link rel="stylesheet" th:href="@{common/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{common/style.css}">
+    <link rel="stylesheet" th:href="@{common/simple-sidebar.css}">
+
+</head>
+<body>
+<!-- 标题栏 {首页，项目列表，EDC}-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a th:href="@{/}"><img th:src="@{common/img/logo.png}" width="300"></a>
+        </div>
+        <div id="navbar" class="navbar-right navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/}">首页</a></li>
+                <li><a th:href="@{/projectList(pageNumber=0)}">项目列表</a></li>
+                <li><a th:href="@{/edc}">EDC</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div style="height: 50px"></div>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="background-blue">
+        <ul class="sidebar-nav">
+            <li>
+                <a href="#introduce">项目基本信息</a>
+            </li>
+            <li>
+                <a href="#news">新闻动态</a>
+            </li>
+            <li>
+                <a href="#">样本信息</a>
+            </li>
+            <li>
+                <a href="#">项目成果</a>
+            </li>
+            <li>
+                <a href="#">数据共享</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div id="introduce" class="session-container">
+            <div class="session-title smaller-margin">
+                <h2>项目简介</h2>
+                <div class="separator"></div>
+                <p class="des-text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    队列研究是分析流行病学的基础研究方法之一，
+                    通过队列可以准确、持续地收集遗传、环境多样性的人群信息，
+                    发现、验证组学标志物及个体化预防和诊疗方案。
+                    现有的队列研究多自成体系、独立存在，缺乏足够的信息曝光度，
+                    队列间合作的程度不高，数据共享程度不足，造成所收集和存储的研究数据的学术价值未能被充分挖掘和利用。
+                    本平台的建立和运行，旨在通过支持系统建设，把已有各个队列资源进行规范化的信息展示，
+                    建立多层次立体化的合作策略和共享机制，形成包括信息管理、信息交互、
+                    工具开发和知识支持在内的多功能信息整合平台，为公共卫生和临床研究的发展提供新的合作渠道和数据来源。
+                </p>
+            </div>
+
+            <div class="session-content margin-zero">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <td colspan="2">基本信息</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>项目名称</td>
+                        <td>北京市海淀区妇女孕期队列</td>
+                    </tr>
+                    <tr>
+                        <td>项目编号</td>
+                        <td>CCC2018112301</td>
+                    </tr>
+                    <tr>
+                        <td>相关信息网址</td>
+                        <td>无</td>
+                    </tr>
+                    <tr>
+                        <td>项目负责人</td>
+                        <td>李智文</td>
+                    </tr>
+                    <tr>
+                        <td>项目牵头单位</td>
+                        <td>北京大学生育健康研究所</td>
+                    </tr>
+                    <tr>
+                        <td>联系人及联系方式</td>
+                        <td>王斌</td>
+                    </tr>
+                    <tr>
+                        <td>项目资助来源</td>
+                        <td>国家自然科学基金</td>
+                    </tr>
+                    <tr>
+                        <td>主要研究目的</td>
+                        <td>评价妇女孕早期环境污染对妊娠结局的影响</td>
+                    </tr>
+                    <tr>
+                        <td>项目开始日期</td>
+                        <td>2017年1月</td>
+                    </tr>
+                    <tr>
+                        <td>项目结束日期（或预计结束日期）</td>
+                        <td>2020年12月</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="news" class="session-container">
+            <div class="session-title smaller-margin">
+                <h2>新闻动态</h2>
+                <div class="separator"></div>
+            </div>
+
+            <div class="session-content clearfix margin-zero">
+                <div class="about-block col-md-6 col-sm-6 col-xs-12">
+                    <a href="#" class="img-full">
+                        <img th:src="@{index/img/pic01.jpg}">
+                    </a>
+                    <header>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                    </header>
+                    <p>用于解决临床科研和药物试验轻量级项目管理、多终端灵活病例采集、
+                        支持队列与随机对照的临床试验设计、数据采集、数据质控、数据统
+                        计分析以及临床资料数据存储等需求.</p>
+                </div>
+
+                <div class="about-block col-md-6 col-sm-6 col-xs-12">
+                    <a href="#" class="img-full">
+                        <img th:src="@{index/img/pic02.jpg}">
+                    </a>
+                    <header>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                    </header>
+                    <p>用于解决临床科研和药物试验轻量级项目管理、多终端灵活病例采集、
+                        支持队列与随机对照的临床试验设计、数据采集、数据质控、数据统
+                        计分析以及临床资料数据存储等需求.</p>
+                </div>
+
+                <div class="about-block col-md-6 col-sm-6 col-xs-12">
+                    <a href="#" class="img-full">
+                        <img th:src="@{index/img/pic03.jpg}">
+                    </a>
+                    <header>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                    </header>
+                    <p>用于解决临床科研和药物试验轻量级项目管理、多终端灵活病例采集、
+                        支持队列与随机对照的临床试验设计、数据采集、数据质控、数据统
+                        计分析以及临床资料数据存储等需求.</p>
+                </div>
+
+                <div class="about-block col-md-6 col-sm-6 col-xs-12">
+                    <a href="#" class="img-full">
+                        <img th:src="@{index/img/pic04.jpg}">
+                    </a>
+                    <header>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                    </header>
+                    <p>用于解决临床科研和药物试验轻量级项目管理、多终端灵活病例采集、
+                        支持队列与随机对照的临床试验设计、数据采集、数据质控、数据统
+                        计分析以及临床资料数据存储等需求.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <div class="session-container background-black clearfix white" style="position: relative; top: 100px;">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <img class="introduce" th:src="@{common/img/email.png}">
+            <p class="msg">liuyuankeban@163.com</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <img class="introduce" th:src="@{common/img/mobile.png}">
+            <p class="msg">010-82805307</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <img class="introduce" th:src="@{common/img/location.png}">
+            <p class="msg">北京大学第六医院</p>
+        </div>
+
+    </div>
+</div>
+
+<div style="height: 50px"></div>
+
+<script th:src="@{common/jquery.min.js}"></script>
+<script th:src="@{common/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{common/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script>
+    $("#wrapper").toggleClass("toggled");
+    // $("#menu-toggle").click(function (e) {
+    //     e.preventDefault();
+    //
+    // });
+</script>
+</body>
+</html>
