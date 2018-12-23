@@ -1,7 +1,7 @@
 # braincohort
 
 ## 入口文件
-使用idea打开此项目，如何文件是braincohort.pku.edu.website.WebsiteApplication
+使用idea打开此项目，入口文件是braincohort.pku.edu.website.WebsiteApplication
 允许main函数即可启动服务器，无需额外下载tomcat
 
 ## 代码文件
