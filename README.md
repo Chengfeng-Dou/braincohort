@@ -2,7 +2,7 @@
 
 ## 入口文件
 使用idea打开此项目，入口文件是braincohort.pku.edu.website.WebsiteApplication
-允许main函数即可启动服务器，无需额外下载tomcat
+运行main函数即可启动服务器，无需额外下载tomcat
 
 ## 代码文件
 在braincohort.pku.edu.website包下的文件都是代码文件，其中entity是数据库使用的文件
