@@ -1,0 +1,67 @@
+.text h4 {
+    color: #bdbdbd;;
+}
+
+.text p {
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.info-container {
+    font-weight: 300;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color .25s ease-out;
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.h1-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.info-title {
+    padding-bottom: 10px;
+}
+
+.info-title img {
+    display: inline-block !important;
+}
+
+.info-title p {
+    display: inline-block !important;
+    font-size: 24px;
+}
+
+.title-box {
+    border-bottom: 1px solid silver;
+}
+
+.title-box h1 {
+    font-size: 24px !important;
+    text-align: left !important;
+}
+
+.container-fix {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 20px !important;
+}
+
+.content-box {
+    font-size: 15px;
+    line-height: 27px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.logo-pic {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}

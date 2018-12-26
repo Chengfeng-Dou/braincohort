@@ -26,6 +26,7 @@
             <ul class="nav navbar-nav">
                 <li><a th:href="@{/}">首页</a></li>
                 <li><a th:href="@{/projectList(pageNumber=0)}">项目列表</a></li>
+                <li><a th:href="@{/diseaseList(pageNumber=0)}">疾病专用平台</a></li>
                 <li><a th:href="@{/edc}">EDC</a></li>
             </ul>
         </div>
@@ -52,15 +53,15 @@
                         <table class="table t-table">
                             <tbody>
                             <tr>
-                                <td class="label label-info fixedFontSize">项目来源</td>
+                                <td class="label label-info fixed-font-size">项目来源</td>
                                 <td th:text="${item.source}"></td>
                             </tr>
                             <tr>
-                                <td class="label label-info fixedFontSize">负责人</td>
+                                <td class="label label-info fixed-font-size">负责人</td>
                                 <td th:text="${item.personInCharge}"></td>
                             </tr>
                             <tr>
-                                <td class="label label-info fixedFontSize">项目描述</td>
+                                <td class="label label-info fixed-font-size">项目描述</td>
                                 <td th:text="${item.description}"></td>
                             </tr>
                             </tbody>

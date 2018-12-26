@@ -3,6 +3,10 @@
     background-color: #5bc0de !important;
 }
 
+body {
+    font-family: Consolas, serif;
+}
+
 .carousel-indicators li[class='slide-dot'] {
     border: 1px solid #5bc0de;
 }
@@ -149,12 +153,6 @@ a {
     top: -4px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
-
-}
-
 .separator-vertical {
     width: 2px;
     height: 100%;
@@ -198,7 +196,7 @@ a {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     padding: 20px;
 
 }
@@ -225,18 +223,29 @@ a {
     border: 0 solid transparent !important;
 }
 
-.t-table tr{
+.t-table tr {
     border: 0 solid transparent !important;
 }
 
-.t-table td{
+.t-table td {
     border: 0 solid transparent !important;
 }
 
-.fixedFontSize {
+.fixed-font-size {
     font-size: 95% !important;
     line-height: 35px !important;
     background: transparent;
     color: black;
 }
 
+.show-right-border {
+    border-right: 1px solid gainsboro;
+}
+
+.show-left-border {
+    border-left: 1px solid gainsboro;
+}
+
+.padding-zero {
+    padding: 0 !important;
+}

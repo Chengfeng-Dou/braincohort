@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>中国睡眠研究平台</title>
+    <link rel="stylesheet" th:href="@{../common/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{../common/style.css}">
+    <link rel="stylesheet" th:href="@{../disease/disease.css}">
+
+    <script th:src="@{../common/jquery.min.js}"></script>
+    <script th:src="@{../common/bootstrap/js/bootstrap.js}"></script>
+</head>
+<body>
+
+<!-- 标题栏 {首页，项目列表，EDC}-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a th:href="@{/}"><img th:src="@{../disease/img/logo.png}" width="300"></a>
+        </div>
+        <div id="navbar" class="navbar-right navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/sleep/diseaseResource}">首页</a></li>
+                <li><a th:href="@{/sleep/dataSet(pageNumber=0)}">数据集</a></li>
+                <li><a th:href="@{/sleep/contractUs}">参与共享</a></li>
+                <li><a th:href="@{/edc}">EDC</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div style="height: 50px"></div>
+
+<div class="session-container">
+    <div class="session-title">
+        <h2>数据集</h2>
+        <div class="separator"></div>
+        <div class="session-content clearfix">
+            <div th:each="item: ${list}" class="about-block col-md-12 col-sm-12 col-xs-12">
+                <div class="card text clearfix center-text">
+                    <div class="col-md-4 col-sm-4 col-xs-4 show-right-border logo-pic">
+                        <a th:href="@{/sleep/dataDetails}"><img
+                                th:src="@{../disease/img/{pic}(pic=${item.logoPic})}"></a>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>样本量</h4>
+                        <p th:text="${item.sampleNum}"></p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>年龄段</h4>
+                        <p th:text="${item.ageRange}"></p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>状态</h4>
+                        <p th:text="${item.state}"></p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <h4>数据类型</h4>
+                        <p th:text="${item.dataType}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="session-container center-text">
+    <ul class="pagination clearfix inline-block">
+        <li><a th:href="@{/sleep/dataSet(pageNumber=0)}">首页</a></li>
+        <li th:if="${curPage > 1}">
+            <a th:href="@{/sleep/dataSet(pageNumber=${curPage - 2})}">前一页</a>
+        </li>
+
+
+        <li th:if="${curPage > 1}" th:each="i:${#numbers.sequence(1, curPage - 1)}">
+            <a th:href="@{/sleep/dataSet(pageNumber=${i - 1})}" th:text="${i}"></a>
+        </li>
+
+        <li class="active"><a href="#" th:text="${curPage}"></a></li>
+
+        <li th:if="${curPage < pageNum}" th:each="i:${#numbers.sequence(curPage + 1, pageNum)}">
+            <a th:href="@{/sleep/dataSet(pageNumber=${i - 1})}" th:text="${i}"></a>
+        </li>
+
+
+        <li th:if="${curPage < pageNum}">
+            <a th:href="@{/sleep/dataSet(pageNumber=${curPage})}">后一页</a>
+        </li>
+        <li><a th:href="@{/sleep/dataSet(pageNumber=${pageNum - 1})}">末页</a></li>
+    </ul>
+</div>
+
+<div class="session-container background-black clearfix white">
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{../common/img/email.png}">
+        <p class="msg">liuyuankeban@163.com</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{../common/img/mobile.png}">
+        <p class="msg">010-82805307</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{../common/img/location.png}">
+        <p class="msg">北京大学第六医院</p>
+    </div>
+
+</div>
+
+</body>
+</html>

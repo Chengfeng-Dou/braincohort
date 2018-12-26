@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>中国睡眠研究平台</title>
+    <link rel="stylesheet" th:href="@{../common/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{../common/style.css}">
+    <link rel="stylesheet" th:href="@{../disease/disease.css}">
+
+    <script th:src="@{../common/jquery.min.js}"></script>
+    <script th:src="@{../common/bootstrap/js/bootstrap.js}"></script>
+</head>
+<body>
+
+<!-- 标题栏 {首页，项目列表，EDC}-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a th:href="@{/}"><img th:src="@{../disease/img/logo.png}" width="300"></a>
+        </div>
+        <div id="navbar" class="navbar-right navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/sleep/diseaseResource}">首页</a></li>
+                <li><a th:href="@{/sleep/dataSet(pageNumber=0)}">数据集</a></li>
+                <li><a th:href="@{/sleep/contractUs}">参与共享</a></li>
+                <li><a th:href="@{/edc}">EDC</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div style="height: 50px"></div>
+
+<!-- 图片轮播展示 -->
+<div id="myCarousel" class="carousel slide m-auto">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active slide-dot"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img th:src="@{../disease/img/fig1.png}" alt="First slide">
+        </div>
+    </div>
+</div>
+
+<div class="session-container background-gray">
+    <div class="session-title">
+        <h2>平台简介</h2>
+        <div class="separator"></div>
+        <p class="des-text">
+            队列研究是分析流行病学的基础研究方法之一，
+            通过队列可以准确、持续地收集遗传、环境多样性的人群信息，
+            发现、验证组学标志物及个体化预防和诊疗方案。
+            现有的队列研究多自成体系、独立存在，缺乏足够的信息曝光度，
+            队列间合作的程度不高，数据共享程度不足，造成所收集和存储的研究数据的学术价值未能被充分挖掘和利用。
+            本平台的建立和运行，旨在通过支持系统建设，把已有各个队列资源进行规范化的信息展示，
+            建立多层次立体化的合作策略和共享机制，形成包括信息管理、信息交互、
+            工具开发和知识支持在内的多功能信息整合平台，为公共卫生和临床研究的发展提供新的合作渠道和数据来源。
+        </p>
+
+    </div>
+</div>
+
+<div class="session-container">
+    <div class="session-title">
+        <h2>数据集</h2>
+        <div class="separator"></div>
+        <div class="session-content clearfix">
+            <div class="about-block col-md-12 col-sm-12 col-xs-12">
+                <div class="card text clearfix center-text">
+                    <div class="col-md-4 col-sm-4 col-xs-4 show-right-border logo-pic">
+                        <a th:href="@{/sleep/dataDetails}"><img th:src="@{../disease/img/666.png}"></a>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>样本量</h4>
+                        <p>500</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>年龄段</h4>
+                        <p>30-70</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>状态</h4>
+                        <p>进行中</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <h4>数据类型</h4>
+                        <p>问卷，PSG，CPC，生物样本</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-block col-md-12 col-sm-12 col-xs-12">
+                <div class="card text clearfix center-text">
+                    <div class="col-md-4 col-sm-4 col-xs-4 show-right-border logo-pic">
+                        <a th:href="@{/sleep/dataDetails}"><img th:src="@{../disease/img/dxs.png}"></a>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>样本量</h4>
+                        <p>3000</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>年龄段</h4>
+                        <p>18-24</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 show-right-border">
+                        <h4>状态</h4>
+                        <p>完成</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <h4>数据类型</h4>
+                        <p>问卷</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-right"><a th:href="@{/sleep/dataSet(pageNumber=0)}">更多...</a></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="session-container background-black clearfix white">
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{../common/img/email.png}">
+        <p class="msg">liuyuankeban@163.com</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{../common/img/mobile.png}">
+        <p class="msg">010-82805307</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{../common/img/location.png}">
+        <p class="msg">北京大学第六医院</p>
+    </div>
+
+</div>
+
+</body>
+</html>

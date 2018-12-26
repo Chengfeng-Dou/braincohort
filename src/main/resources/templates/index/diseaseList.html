@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>精神疾病队列研究平台</title>
+    <link rel="stylesheet" th:href="@{common/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{common/style.css}">
+    <script th:src="@{common/jquery.min.js}"></script>
+    <script th:src="@{common/bootstrap/js/bootstrap.js}"></script>
+</head>
+<body>
+<!-- 标题栏 {首页，项目列表，EDC}-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a th:href="@{/}"><img th:src="@{common/img/logo.png}" width="300"></a>
+        </div>
+        <div id="navbar" class="navbar-right navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/}">首页</a></li>
+                <li><a th:href="@{/projectList(pageNumber=0)}">项目列表</a></li>
+                <li><a th:href="@{/diseaseList(pageNumber=0)}">疾病专用平台</a></li>
+                <li><a th:href="@{/edc}">EDC</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div style="height: 50px"></div>
+
+<div class="session-container">
+    <div class="session-title">
+        <h2>疾病专用平台</h2>
+        <div class="separator"></div>
+    </div>
+    <div class="session-content clearfix">
+        <div class="about-block col-md-6 col-sm-6 col-xs-12">
+            <div class="inside-center card">
+                <div class="inner-box">
+                    <div class="icon-box">
+                        <img class="introduce" th:src="@{/common/img/name.png}">
+                    </div>
+                    <h3><a th:href="@{/sleep/diseaseResource}">中国睡眠研究平台</a></h3>
+                    <h3><a th:href="@{/sleep/diseaseResource}">China Sleep Research Resource</a></h3>
+                    <div class="text">
+                        <p>该平台整合国内睡眠相关研究的队列、数据、方法和成果，促进相关研究的合作与数据的共享，
+                            为中国睡眠科学的研究提供资源，促进睡眠学科的发展和提高国人的睡眠质量。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-block col-md-6 col-sm-6 col-xs-12">
+            <div class="inside-center card">
+                <div class="inner-box">
+                    <div class="icon-box">
+                        <img class="introduce" th:src="@{/common/img/name.png}">
+                    </div>
+                    <h3><a th:href="@{/sleep/diseaseResource}">注意缺陷多动障碍研究平台</a></h3>
+                    <h3><a th:href="@{/sleep/diseaseResource}">China ADHD Research Resource</a></h3>
+                    <div class="text">
+                        <p>该平台整合国内注意缺陷多动障碍（ADHD）研究的队列、数据、方法和成果，
+                            促进相关研究的合作与数据的共享，为研究ADHD的致病机制以及解决相关的临床问题提供资源。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="session-container background-black clearfix white">
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{common/img/email.png}">
+        <p class="msg">liuyuankeban@163.com</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{common/img/mobile.png}">
+        <p class="msg">010-82805307</p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <img class="introduce" th:src="@{common/img/location.png}">
+        <p class="msg">北京大学第六医院</p>
+    </div>
+
+</div>
+
+</body>
+</html>
