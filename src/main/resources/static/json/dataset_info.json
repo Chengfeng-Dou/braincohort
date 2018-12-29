@@ -1,5 +1,6 @@
 [
   {
+    "title": "北大六院睡眠临床队列",
     "logoPic": "dxs.png",
     "sampleNum": "3000",
     "ageRange": "18-24",
@@ -7,132 +8,7 @@
     "dataType": "问卷"
   },
   {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
-    "logoPic": "666.png",
-    "sampleNum": "500",
-    "ageRange": "30-70",
-    "state": "进行中",
-    "dataType": "问卷，PSG，CPC，生物样本"
-  },
-  {
+    "title": "大学生睡眠质量研究",
     "logoPic": "666.png",
     "sampleNum": "500",
     "ageRange": "30-70",

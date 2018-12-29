@@ -49,7 +49,7 @@
                         <p>简介</p>
                     </div>
                     <div>
-                        <p>Multi-cohort study focused on sleep-disordered breathing and cardiovascular outcomes.</p>
+                        <p th:text="${detail.what}"></p>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <p>参与者</p>
                     </div>
                     <div>
-                        <p>5,804 adults aged 40 and older.</p>
+                        <p th:text="${detail.who}"></p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                         <p>项目周期</p>
                     </div>
                     <div>
-                        <p>Two exam cycles, 1995-1998 and 2001-2003. Cardiovascular disease outcomes were tracked until 2010.</p>
+                        <p th:text="${detail.when}"></p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                         <p>资金来源</p>
                     </div>
                     <div>
-                        <p>National Heart, Lung, and Blood Institute</p>
+                        <p th:text="${detail.sources}"></p>
                     </div>
                 </div>
             </div>
@@ -91,90 +91,14 @@
 </div>
 
 
-<div class="container container-fix">
+<div class="container container-fix" th:each="item: ${detail.data}">
     <div class="title-box">
-        <h1>项目介绍</h1>
+        <h1 th:text="${item.title}"></h1>
     </div>
-    <p class="content-box">
-        The Sleep Heart Health Study (SHHS) is a multi-center cohort study implemented by the National Heart Lung &
-        Blood Institute to determine the cardiovascular and other consequences of sleep-disordered breathing. It tests
-        whether sleep-related breathing is associated with an increased risk of coronary heart disease, stroke, all
-        cause mortality, and hypertension.  In all, 6,441 men and women aged 40 years and older were enrolled between
-        November 1, 1995 and January 31, 1998 to take part in SHHS Visit 1. During exam cycle 3 (January 2001- June
-        2003), a second polysomnogram (SHHS Visit 2) was obtained in 3,295 of the participants. CVD Outcomes data were
-        monitored and adjudicated by parent cohorts between baseline and 2011. More than 130 manuscripts have
-        been published investigating predictors and outcomes of sleep disorders. Click here for a full description of
-        SHHS. Read more about SHHS at ClinicalTrials.gov (NCT00005275).
-    </p>
+    <p class="content-box" th:text="${item.content}"></p>
 </div>
 
-<div class="container container-fix">
-    <div class="title-box">
-        <h1>数据总览</h1>
-    </div>
-    <p class="content-box">
-        The Sleep Heart Health Study (SHHS) is a multi-center cohort study implemented by the National Heart Lung &
-        Blood Institute to determine the cardiovascular and other consequences of sleep-disordered breathing. It tests
-        whether sleep-related breathing is associated with an increased risk of coronary heart disease, stroke, all
-        cause mortality, and hypertension.  In all, 6,441 men and women aged 40 years and older were enrolled between
-        November 1, 1995 and January 31, 1998 to take part in SHHS Visit 1. During exam cycle 3 (January 2001- June
-        2003), a second polysomnogram (SHHS Visit 2) was obtained in 3,295 of the participants. CVD Outcomes data were
-        monitored and adjudicated by parent cohorts between baseline and 2011. More than 130 manuscripts have
-        been published investigating predictors and outcomes of sleep disorders. Click here for a full description of
-        SHHS. Read more about SHHS at ClinicalTrials.gov (NCT00005275).
-    </p>
-</div>
 
-<div class="container container-fix">
-    <div class="title-box">
-        <h1>协议和手册</h1>
-    </div>
-    <p class="content-box">
-        The Sleep Heart Health Study (SHHS) is a multi-center cohort study implemented by the National Heart Lung &
-        Blood Institute to determine the cardiovascular and other consequences of sleep-disordered breathing. It tests
-        whether sleep-related breathing is associated with an increased risk of coronary heart disease, stroke, all
-        cause mortality, and hypertension.  In all, 6,441 men and women aged 40 years and older were enrolled between
-        November 1, 1995 and January 31, 1998 to take part in SHHS Visit 1. During exam cycle 3 (January 2001- June
-        2003), a second polysomnogram (SHHS Visit 2) was obtained in 3,295 of the participants. CVD Outcomes data were
-        monitored and adjudicated by parent cohorts between baseline and 2011. More than 130 manuscripts have
-        been published investigating predictors and outcomes of sleep disorders. Click here for a full description of
-        SHHS. Read more about SHHS at ClinicalTrials.gov (NCT00005275).
-    </p>
-</div>
-
-<div class="container container-fix">
-    <div class="title-box">
-        <h1>数据分析</h1>
-    </div>
-    <p class="content-box">
-        The Sleep Heart Health Study (SHHS) is a multi-center cohort study implemented by the National Heart Lung &
-        Blood Institute to determine the cardiovascular and other consequences of sleep-disordered breathing. It tests
-        whether sleep-related breathing is associated with an increased risk of coronary heart disease, stroke, all
-        cause mortality, and hypertension.  In all, 6,441 men and women aged 40 years and older were enrolled between
-        November 1, 1995 and January 31, 1998 to take part in SHHS Visit 1. During exam cycle 3 (January 2001- June
-        2003), a second polysomnogram (SHHS Visit 2) was obtained in 3,295 of the participants. CVD Outcomes data were
-        monitored and adjudicated by parent cohorts between baseline and 2011. More than 130 manuscripts have
-        been published investigating predictors and outcomes of sleep disorders. Click here for a full description of
-        SHHS. Read more about SHHS at ClinicalTrials.gov (NCT00005275).
-    </p>
-</div>
-
-<div class="container container-fix">
-    <div class="title-box">
-        <h1>设备</h1>
-    </div>
-    <p class="content-box">
-        The Sleep Heart Health Study (SHHS) is a multi-center cohort study implemented by the National Heart Lung &
-        Blood Institute to determine the cardiovascular and other consequences of sleep-disordered breathing. It tests
-        whether sleep-related breathing is associated with an increased risk of coronary heart disease, stroke, all
-        cause mortality, and hypertension.  In all, 6,441 men and women aged 40 years and older were enrolled between
-        November 1, 1995 and January 31, 1998 to take part in SHHS Visit 1. During exam cycle 3 (January 2001- June
-        2003), a second polysomnogram (SHHS Visit 2) was obtained in 3,295 of the participants. CVD Outcomes data were
-        monitored and adjudicated by parent cohorts between baseline and 2011. More than 130 manuscripts have
-        been published investigating predictors and outcomes of sleep disorders. Click here for a full description of
-        SHHS. Read more about SHHS at ClinicalTrials.gov (NCT00005275).
-    </p>
-</div>
 
 
 <div class="session-container background-black clearfix white">

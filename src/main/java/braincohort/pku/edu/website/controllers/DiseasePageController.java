@@ -2,6 +2,7 @@ package braincohort.pku.edu.website.controllers;
 
 
 import braincohort.pku.edu.website.entity.DataSetDescription;
+import braincohort.pku.edu.website.entity.DataSetDetail;
 import braincohort.pku.edu.website.services.DataSetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -40,7 +41,9 @@ public class DiseasePageController {
     }
 
     @RequestMapping("/dataDetails")
-    public String dataDetails() {
+    public String dataDetails(String title, Model model) {
+        DataSetDetail dataSetDetail = setService.getDetailByName(title);
+        model.addAttribute("detail", dataSetDetail);
         return "disease/dataDetails";
     }
 
