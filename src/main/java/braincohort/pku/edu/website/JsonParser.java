@@ -4,10 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 
-import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -30,7 +27,7 @@ public class JsonParser {
 
     private String jsonRead(InputStream inputStream) {
         StringBuilder buffer = new StringBuilder();
-        Scanner scanner = new Scanner(inputStream, StandardCharsets.UTF_8);
+        Scanner scanner = new Scanner(inputStream, "UTF-8");
         while (scanner.hasNextLine()) {
             buffer.append(scanner.nextLine());
         }
