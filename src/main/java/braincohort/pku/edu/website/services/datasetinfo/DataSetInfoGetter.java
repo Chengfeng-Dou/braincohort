@@ -32,7 +32,7 @@ public class DataSetInfoGetter {
     @Bean
     public List<DataSetDescription> getDataSetDes() {
         try {
-            return jsonParser.getListFromJson(DataSetDescription.class, datasetInfo.getFile());
+            return jsonParser.getListFromJson(DataSetDescription.class, datasetInfo.getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -43,7 +43,7 @@ public class DataSetInfoGetter {
     public Map<String, DataSetDetail> getDataSetDetails() {
         Map<String, DataSetDetail> dataSetDetailMap = new HashMap<>();
         try {
-            List<DataSetDetail> dataSetDetails = jsonParser.getListFromJson(DataSetDetail.class, datasetDetails.getFile());
+            List<DataSetDetail> dataSetDetails = jsonParser.getListFromJson(DataSetDetail.class, datasetDetails.getInputStream());
             for (DataSetDetail dataSetDetail : dataSetDetails) {
                 dataSetDetailMap.put(dataSetDetail.title, dataSetDetail);
             }

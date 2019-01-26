@@ -29,7 +29,7 @@ public class ProjectListGetter {
     @Bean
     public List<ProjectDescription> getProjectList(){
         try {
-            return jsonParser.getListFromJson(ProjectDescription.class, projectList.getFile());
+            return jsonParser.getListFromJson(ProjectDescription.class, projectList.getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
         }
