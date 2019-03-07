@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "markdown.basePackage",
+      "type": "java.lang.String",
+      "description": "Description for markdown.basePackage."
+    }
+  ]
+}

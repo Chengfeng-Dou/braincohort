@@ -3,7 +3,7 @@ package braincohort.pku.edu.website.services.datasetinfo;
 import braincohort.pku.edu.website.entity.DataSetDescription;
 import braincohort.pku.edu.website.entity.DataSetDetail;
 import braincohort.pku.edu.website.services.DataManager;
-import braincohort.pku.edu.website.services.DataSetService;
+import braincohort.pku.edu.website.controllers.DataSetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
