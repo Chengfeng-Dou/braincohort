@@ -91,11 +91,8 @@
 </div>
 
 
-<div class="container container-fix" th:each="item: ${detail.data}">
-    <div class="title-box">
-        <h1 th:text="${item.title}"></h1>
-    </div>
-    <p class="content-box" th:text="${item.content}"></p>
+<div id="markdown" class="container container-fix" th:utext="${detail.content}">
+
 </div>
 
 
@@ -116,6 +113,16 @@
     </div>
 
 </div>
+
+<script th:src="@{../common/jquery.min.js}"></script>
+<script th:src="@{../lib/showdown/showdown.js}"></script>
+<script>
+    var markdown = $('#markdown');
+    var data = markdown.html();
+    var converter = new showdown.Converter();
+    var html = converter.makeHtml(data);
+    markdown.html(html);
+</script>
 
 </body>
 </html>

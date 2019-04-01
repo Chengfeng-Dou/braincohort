@@ -1,6 +1,6 @@
-package braincohort.pku.edu.website.controllers;
+package braincohort.pku.edu.website.controllers.index;
 
-import braincohort.pku.edu.website.entity.ProjectContent;
+import braincohort.pku.edu.website.entity.index.ProjectContent;
 
 import java.io.IOException;
 import java.util.List;

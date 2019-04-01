@@ -1,24 +1,21 @@
-package braincohort.pku.edu.website.controllers;
+package braincohort.pku.edu.website.controllers.disease;
 
 
-import braincohort.pku.edu.website.entity.DataSetDescription;
-import braincohort.pku.edu.website.entity.DataSetDetail;
-import org.springframework.beans.factory.annotation.Autowired;
+import braincohort.pku.edu.website.entity.disease.DataSetDescription;
+import braincohort.pku.edu.website.entity.disease.DataSetDetail;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
 @RequestMapping("/sleep")
 public class DiseasePageController {
-    private final DataSetService setService;
-
-    @Autowired
-    public DiseasePageController(DataSetService setService) {
-        this.setService = setService;
-    }
+    @Resource(name = "dataset_impl")
+    private DataSetService setService;
 
     @RequestMapping("/diseaseResource")
     public String diseaseSource() {
@@ -40,8 +37,8 @@ public class DiseasePageController {
     }
 
     @RequestMapping("/dataDetails")
-    public String dataDetails(String title, Model model) {
-        DataSetDetail dataSetDetail = setService.getDetailByName(title);
+    public String dataDetails(String link, Model model) throws IOException {
+        DataSetDetail dataSetDetail = setService.getDetailByLink(link);
         model.addAttribute("detail", dataSetDetail);
         return "disease/dataDetails";
     }

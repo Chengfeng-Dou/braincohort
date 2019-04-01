@@ -1,7 +1,7 @@
 package braincohort.pku.edu.website.services.projectinfo;
 
-import braincohort.pku.edu.website.entity.ProjectDescription;
-import braincohort.pku.edu.website.controllers.ProjectInfoService;
+import braincohort.pku.edu.website.entity.index.ProjectDescription;
+import braincohort.pku.edu.website.controllers.index.ProjectInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

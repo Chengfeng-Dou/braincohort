@@ -1,7 +1,7 @@
-package braincohort.pku.edu.website.controllers;
+package braincohort.pku.edu.website.controllers.index;
 
-import braincohort.pku.edu.website.entity.ProjectContent;
-import braincohort.pku.edu.website.entity.ProjectDescription;
+import braincohort.pku.edu.website.entity.index.ProjectContent;
+import braincohort.pku.edu.website.entity.index.ProjectDescription;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

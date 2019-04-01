@@ -1,4 +1,4 @@
-package braincohort.pku.edu.website.entity;
+package braincohort.pku.edu.website.entity.index;
 
 import javax.persistence.*;
 

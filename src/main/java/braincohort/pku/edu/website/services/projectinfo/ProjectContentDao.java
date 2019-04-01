@@ -1,7 +1,7 @@
 package braincohort.pku.edu.website.services.projectinfo;
 
-import braincohort.pku.edu.website.entity.ProjectContent;
-import braincohort.pku.edu.website.entity.ProjectContentId;
+import braincohort.pku.edu.website.entity.index.ProjectContent;
+import braincohort.pku.edu.website.entity.index.ProjectContentId;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 
