@@ -46,8 +46,9 @@
             <div th:each="item: ${list}" class="about-block col-md-12 col-sm-12 col-xs-12">
                 <div class="card text clearfix center-text">
                     <div class="col-md-4 col-sm-12 col-xs-12 logo-pic">
-                        <a th:href="@{/sleep/dataDetails(link=${item.link})}"><img
-                                th:src="@{../disease/img/{pic}(pic=${item.logoPic})}"></a>
+                        <a th:href="@{/sleep/dataDetails(link=${item.link})}">
+                            <img th:src="@{../disease/img/{pic}(pic=${item.logoPic})}"
+                                 style="width: 336px; height:36px"></a>
                     </div>
                     <div class="col-md-2 col-sm-3 col-xs-6">
                         <h4>样本量</h4>
